@@ -77,9 +77,9 @@
 }
 
 .pokemon .name{
+    text-transform: capitalize;
     color: white;
     margin-bottom: .25rem;
-
 }
 
 .pokemon .detail .types{
