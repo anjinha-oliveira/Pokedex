@@ -27,11 +27,11 @@ function loadPokemonItens(offset, limit) {
 loadPokemonItens(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
-    offset += limit 
-    const qntRecordNexPage = offset + limit
+    offset += limit // 150
+    const qntRecordNexPage = offset + limit // 160
 
+    // 160 >= 151
     if (qntRecordNexPage >= maxRecords) {
-        const newLimit = maxRecords - offset
         loadPokemonItens(offset, limit)
         
         loadMoreButton.parentElement.removeChild(loadMoreButton)
